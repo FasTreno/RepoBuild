@@ -1,0 +1,12 @@
+name: Esempio Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    -uses: action/checkpout@v2
+    -name: RUn a one-line script
+      run: echo Hello, World!
+  
